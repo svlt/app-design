@@ -46,10 +46,26 @@ body {
 }
 
 /* Photos card */
+.photo-list {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -.25rem;
+	margin-bottom: 1rem;
+}
 .photo-list-item {
-	float: left;
-	width: 48%;
-	margin: 0 2% 2% 0;
+	flex: auto;
+	width: 120px;
+	margin: 0 .25rem .25rem 0;
+}
+.photo-list-item img {
+	width: 100%;
+	height: auto;
+}
+.card-photos .photo-list-item {
+	width: 90px;
+}
+.card-block .photo-list:last-child {
+	margin-bottom: 0;
 }
 
 /* Stream card */
