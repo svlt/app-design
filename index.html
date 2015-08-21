@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- This is a work-in-progress design mockup for svlt/front -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Social Vault</title>
+	<link rel="stylesheet" type="text/css" href="assets/bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/bower_components/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+<body>
+	<div class="navbar navbar-dark bg-primary navbar-fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href=".">Social Vault</a>
+			<button class="navbar-toggler hidden-sm-up pull-right" type="button" data-toggle="collapse" data-target="#navCollapse">
+				&#9776;
+			</button>
+			<div class="collapse navbar-toggleable-xs" id="navCollapse">
+				<ul class="nav navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Stream</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Profile</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Messages</a>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav pull-right">
+					<li class="nav-item">
+						<!-- Temporary empty item for spacing -->
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#" title="Notifications"><i class="fa fa-bell"></i></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="profile.html" style="padding: 0;"><img src="//gravatar.com/avatar/?d=mm&amp;s=35" class="img-circle" alt></a>
+					</li>
+				</ul>
+				<form class="form-inline navbar-form pull-right">
+					<input class="form-control" type="search" placeholder="Search">
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-3">
+
+				<div class="card card-profile">
+					<div class="card-img-top card-profile-banner"></div>
+					<a class="card-profile-pic" href="profile.html">
+						<img class="card-profile-img" src="//gravatar.com/avatar/?d=mm&amp;s=100">
+					</a>
+					<div class="card-block text-center">
+						<h4 class="card-title">Ken Taylor</h4>
+						<p>I'm a test user! My name comes from one of Alan's old Facebook adventures.</p>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-block">
+						<h4 class="card-title">About</h4>
+						<ul class="fa-ul">
+							<li><i class="fa-li fa fa-users"></i> 238 <a href="#">Buddies</a></li>
+							<li><i class="fa-li fa fa-briefcase"></i> Works at <a href="#">Social Vault</a></li>
+							<li><i class="fa-li fa fa-home"></i> Lives in <a href="#">Portland, OR</a></li>
+							<li><i class="fa-li fa fa-map-marker"></i> From <a href="#">Seattle, WA</a></li>
+						</ul>
+					</div>
+				</div>
+
+				<div class="card card-photos">
+					<div class="card-block">
+						<h4 class="card-title">Photos</h4>
+						<div class="photo-list clearfix">
+							<a class="photo-list-item" href="#"><img class="img-responsive" src="//placehold.it/120"></a>
+							<a class="photo-list-item" href="#"><img class="img-responsive" src="//placehold.it/120"></a>
+							<a class="photo-list-item" href="#"><img class="img-responsive" src="//placehold.it/120"></a>
+							<a class="photo-list-item" href="#"><img class="img-responsive" src="//placehold.it/120"></a>
+							<a class="photo-list-item" href="#"><img class="img-responsive" src="//placehold.it/120"></a>
+							<a class="photo-list-item" href="#"><img class="img-responsive" src="//placehold.it/120"></a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="col-md-6">
+
+				<div class="card card-stream">
+					<div class="card-block">
+						<form>
+							<fieldset class="form-group">
+								<label class="sr-only" for="message">Message</label>
+								<div class="input-group">
+									<input class="form-control" type="text" placeholder="Message">
+									<span class="input-group-btn">
+										<button class="btn btn-secondary" type="button">
+											<i class="fa fa-camera"></i>
+										</button>
+									</span>
+								</div>
+							</fieldset>
+						</form>
+					</div>
+					<div class="card-block">
+						<div class="media">
+							<a class="media-left" href="profile.html">
+								<img class="media-object img-circle" src="//gravatar.com/avatar/?d=mm&amp;s=60" class="img-circle" alt>
+							</a>
+							<div class="media-body">
+								<div class="clearfix">
+									<b class="pull-left">Ken Taylor</b>
+									<small class="pull-right text-muted">4 min</small>
+								</div>
+								<p>Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta felis euismod semper. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+							</div>
+						</div>
+					</div>
+					<div class="card-block">
+						<div class="media">
+							<a class="media-left" href="profile.html">
+								<img class="media-object img-circle" src="//gravatar.com/avatar/?d=mm&amp;s=60" class="img-circle" alt>
+							</a>
+							<div class="media-body">
+								<div class="clearfix">
+									<b class="pull-left">June Whitely</b>
+									<small class="pull-right text-muted">12 min</small>
+								</div>
+								<p>Donec id elit non mi porta gravida at eget metus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="col-md-3">
+
+				<p class="alert alert-warning alert-dismissable fade in" role="alert">
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+						<span class="sr-only">Close</span>
+					</button>
+					<strong>Whoa:</strong> Some random account alert! Ohnoes!
+				</p>
+
+				<div class="card">
+					<div class="card-block">
+						<h4 class="card-title">Sponsored</h4>
+					</div>
+					<img class="img-responsive" src="//placehold.it/300x120" alt="ads lol">
+					<div class="card-block">
+						<strong>Heading text</strong>
+						<p>Isn't it just wonderful how there isn't even a website yet and you're already seeing ads?</p>
+						<a class="btn btn-primary-outline btn-sm" href="#">
+							<i class="fa fa-shopping-cart"></i>&ensp;Buy Thing
+						</a>
+					</div>
+				</div>
+
+				<div class="card">
+					<div class="card-block">
+						<h4 class="card-title">Recommended buddies</h4>
+						<br>
+						<ul class="media-list">
+							<li class="media">
+								<a class="media-left" href="profile.html">
+									<img class="media-img img-circle" src="//gravatar.com/avatar/?d=mm&amp;s=60">
+								</a>
+								<div class="media-body">
+									<strong>Alan Hardman</strong>
+									<button class="btn btn-primary-outline btn-sm" type="button">
+										<i class="fa fa-user-plus"></i>&ensp;Add Buddy
+									</button>
+								</div>
+							</li>
+							<li class="media">
+								<a class="media-left" href="profile.html">
+									<img class="media-img img-circle" src="//gravatar.com/avatar/?d=mm&amp;s=60">
+								</a>
+								<div class="media-body">
+									<strong>Michael Robinson</strong>
+									<button class="btn btn-primary-outline btn-sm" type="button">
+										<i class="fa fa-user-plus"></i>&ensp;Add Buddy
+									</button>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="card-footer text-muted">
+						<small><a href="#">View all recommended buddies</a></small>
+					</div>
+				</div>
+
+				<div class="card card-copyright">
+					<div class="card-block">
+						<p>&copy; 2015 Social Vault</p>
+						<nav class="nav">
+							<a class="nav-link" href="#">About</a>
+							<a class="nav-link" href="#">Terms</a>
+							<a class="nav-link" href="#">Help</a>
+							<a class="nav-link" href="https://github.com/svlt">GitHub</a>
+						</nav>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="assets/bower_components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="assets/bower_components/geopattern/js/geopattern.min.js"></script>
+	<script type="text/javascript" src="assets/script.js"></script>
+</body>
+</html>

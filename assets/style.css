@@ -1,0 +1,71 @@
+html {
+	/*font-size: 14px;*/
+}
+body {
+	padding-top: 5em;
+	font-size: 14px;
+}
+
+/* Card title override */
+.card-title {
+	font-size: 1rem;
+	margin-bottom: .5rem;
+}
+.card-title:last-child {
+	margin-bottom: 0;
+}
+
+/* Profile card */
+.card-profile-banner {
+	background-color: #777;
+	min-height: 140px;
+}
+.card-profile .card-title {
+	font-size: 1.25rem;
+}
+.card-profile-pic {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 100px;
+	text-align: center;
+}
+.card-profile-img {
+	margin-top: -50px;
+	border: 3px solid #fff;
+	border-radius: 100%;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+/* About card */
+.card-block .fa-ul:last-child {
+	margin-bottom: 0;
+}
+.card-block .fa-li {
+	left: -2.5em;
+}
+
+/* Photos card */
+.photo-list-item {
+	float: left;
+	width: 48%;
+	margin: 0 2% 2% 0;
+}
+
+/* Stream card */
+.card-stream > .card-block:first-child .form-group {
+	margin-bottom: 0;
+}
+.card-stream > .card-block:not(:last-child) {
+	border-bottom: .0625rem solid #e5e5e5;
+}
+
+/* Recommended buddies card */
+.card-block .media-list:last-child {
+	margin-bottom: 0;
+}
+
+/* Copyright card */
+.card-copyright .nav-link:not(:first-child) {
+	padding-left: .75rem;
+}

@@ -1,0 +1,13 @@
+{
+  "name": "svlt-assets",
+  "version": "0.0.1",
+  "authors": [
+    "Alan Hardman <alan@vault.im>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "v4-dev",
+    "font-awesome": "4.4.0",
+    "geopattern": "1.2.3"
+  }
+}
