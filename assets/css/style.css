@@ -6118,7 +6118,8 @@ a.bg-danger:hover {
 
 body {
   padding-top: 5em;
-  font-size: 14px; }
+  font-size: 14px;
+  background-color: #f5f8fa; }
 
 .btn .icon {
   vertical-align: middle; }
@@ -6141,6 +6142,13 @@ body {
 .navbar .img-circle {
   width: 35px;
   height: 35px; }
+
+.dropdown-nav-user .nav-link {
+  padding-top: 0;
+  padding-bottom: 0; }
+
+.card {
+  background-color: #fff; }
 
 .card-title {
   font-size: 1rem;
@@ -6258,9 +6266,11 @@ body {
   margin-right: auto;
   width: 18rem;
   text-align: center; }
-  .login-form h2 {
-    margin-bottom: 3rem; }
+  .login-form h1 {
+    margin-bottom: 2.5rem; }
+    .login-form h1 .icon-svlt {
+      font-size: 96px; }
 
 @media (min-width: 48em) {
   .login-form {
-    padding-top: 14rem; } }
+    padding-top: 12rem; } }

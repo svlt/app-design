@@ -1,6 +1,7 @@
 body {
 	padding-top: 5em;
 	font-size: 14px;
+	background-color: #f5f8fa;
 }
 
 .btn .icon {
@@ -28,8 +29,17 @@ body {
 	width: $profile-img-size-nav;
 	height: $profile-img-size-nav;
 }
+.dropdown-nav-user {
+	.nav-link {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+}
 
-// Card title override
+// Card overrides
+.card {
+	background-color: #fff;
+}
 .card-title {
 	font-size: 1rem;
 	margin-bottom: .5rem;
