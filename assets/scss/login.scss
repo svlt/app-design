@@ -1,0 +1,13 @@
+.login-form {
+	@include center-block;
+	width: 18rem;
+	text-align: center;
+	h2 {
+		margin-bottom: 3rem;
+	}
+}
+@include media-breakpoint-up(md) {
+	.login-form {
+		padding-top: 14rem;
+	}
+}
