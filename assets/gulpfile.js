@@ -10,6 +10,7 @@ gulp.task('scss', function() {
 		.pipe(sass().on('error', notify.onError(function(error) {
 				return 'Error compiling SCSS: ' + error.message;
 			})))
+		.pipe(autoprefixer())
 		.pipe(gulp.dest('css'))
 		.pipe(rename({suffix: '.min'}))
 		.pipe(minifycss())

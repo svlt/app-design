@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- This is a work-in-progress design mockup for svlt/front -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Color Test</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+	<style>
+	h2 {
+		margin-top: 2rem;
+	}
+	.bg-primary, .bg-success, .bg-info, .bg-warning, .bg-danger {
+		padding: .5rem;
+		margin-bottom: .5rem;
+	}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Color Test</h1>
+		<p>This page shows the colors from <code>assets/scss/style.scss</code> in the standard Bootstrap compontents.</p>
+
+		<hr>
+
+		<h2>Buttons</h2>
+		<p>
+			<button type="button" class="btn btn-primary">Primary</button>
+			<button type="button" class="btn btn-secondary">Secondary</button>
+			<button type="button" class="btn btn-success">Success</button>
+			<button type="button" class="btn btn-warning">Warning</button>
+			<button type="button" class="btn btn-danger">Danger</button>
+			<button type="button" class="btn btn-link">Link</button>
+		</p>
+		<p>
+			<button type="button" class="btn btn-primary-outline">Primary</button>
+			<button type="button" class="btn btn-secondary-outline">Secondary</button>
+			<button type="button" class="btn btn-success-outline">Success</button>
+			<button type="button" class="btn btn-warning-outline">Warning</button>
+			<button type="button" class="btn btn-danger-outline">Danger</button>
+		</p>
+
+		<h2>Alerts</h2>
+		<p>
+			<div class="alert alert-success" role="alert">
+				<strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>.
+			</div>
+			<div class="alert alert-info" role="alert">
+				<strong>Heads up!</strong> This <a href="#" class="alert-link">alert needs your attention</a>, but it's not super important.
+			</div>
+			<div class="alert alert-warning" role="alert">
+				<strong>Warning!</strong> Better check yourself, you're <a href="#" class="alert-link">not looking too good</a>.
+			</div>
+			<div class="alert alert-danger" role="alert">
+				<strong>Oh snap!</strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again.
+			</div>
+		</p>
+
+		<h2>Text</h2>
+		<div class="row">
+			<div class="col-md-6">
+				<p class="text-muted">Fusce dapibus, tellus ac cursus commodo, tortor mauris nibh.</p>
+				<p class="text-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+				<p class="text-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</p>
+				<p class="text-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</p>
+				<p class="text-warning">Etiam porta sem malesuada magna mollis euismod.</p>
+				<p class="text-danger">Donec ullamcorper nulla non metus auctor fringilla.</p>
+			</div>
+			<div class="col-md-6">
+				<div class="bg-primary">Nullam id dolor id nibh ultricies vehicula ut id elit.</div>
+				<div class="bg-success">Duis mollis, est non commodo luctus, nisi erat porttitor ligula.</div>
+				<div class="bg-info">Maecenas sed diam eget risus varius blandit sit amet non magna.</div>
+				<div class="bg-warning">Etiam porta sem malesuada magna mollis euismod.</div>
+				<div class="bg-danger">Donec ullamcorper nulla non metus auctor fringilla.</div>
+			</div>
+		</div>
+
+		<h2>Labels</h2>
+		<p>
+			<span class="label label-default">Default</span>
+			<span class="label label-primary">Primary</span>
+			<span class="label label-success">Success</span>
+			<span class="label label-info">Info</span>
+			<span class="label label-warning">Warning</span>
+			<span class="label label-danger">Danger</span>
+			<br>
+			<span class="label label-pill label-default">Default</span>
+			<span class="label label-pill label-primary">Primary</span>
+			<span class="label label-pill label-success">Success</span>
+			<span class="label label-pill label-info">Info</span>
+			<span class="label label-pill label-warning">Warning</span>
+			<span class="label label-pill label-danger">Danger</span>
+		</p>
+
+		<h2>Cards</h2>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="card card-inverse card-primary text-center">
+					<div class="card-block">
+						<blockquote class="card-blockquote">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+							<footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+						</blockquote>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card card-inverse card-success text-center">
+					<div class="card-block">
+						<blockquote class="card-blockquote">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+							<footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+						</blockquote>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card card-inverse card-info text-center">
+					<div class="card-block">
+						<blockquote class="card-blockquote">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+							<footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+						</blockquote>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card card-inverse card-warning text-center">
+					<div class="card-block">
+						<blockquote class="card-blockquote">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+							<footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+						</blockquote>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="card card-inverse card-danger text-center">
+					<div class="card-block">
+						<blockquote class="card-blockquote">
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+							<footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
+						</blockquote>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<h2>Progress</h2>
+		<p>
+			<progress class="progress progress-success" value="25" max="100">25%</progress>
+			<progress class="progress progress-info" value="50" max="100">50%</progress>
+			<progress class="progress progress-warning" value="75" max="100">75%</progress>
+			<progress class="progress progress-danger" value="100" max="100">100%</progress>
+		</p>
+
+	</div>
+	<br><br><br>
+</body>
+</html>

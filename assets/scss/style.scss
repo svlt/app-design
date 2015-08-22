@@ -1,9 +1,19 @@
+$brand-primary:             #0087cb !default;
+
+$input-border-focus:        lighten($brand-primary, 10%) !default;
+$input-box-shadow-focus:    rgba($brand-primary, .5) !default;
+
 $enable-flex:               true !default;
 $enable-rounded:            true !default;
 $enable-shadows:            true !default;
 $enable-gradients:          true !default;
 $enable-transitions:        false !default;
 $enable-hover-media-query:  false !default;
+
+$profile-img-size-nav:      35px;
+$profile-img-size-card:     100px;
+$profile-img-size-post:     60px;
+$profile-img-size-comment:  40px;
 
 @import "../bower_components/bootstrap/scss/bootstrap";
 @import "entypo";
