@@ -6228,6 +6228,11 @@ body {
 .card-copyright .nav-link:not(:first-child) {
   padding-left: .75rem; }
 
+.profile-banner,
+.card-profile-banner {
+  background-position: center center;
+  background-size: cover; }
+
 .jumbotron-profile {
   margin-top: -1.125rem;
   text-align: center;
