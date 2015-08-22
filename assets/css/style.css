@@ -6,6 +6,10 @@ body {
 	font-size: 14px;
 }
 
+.btn .icon {
+	vertical-align: middle;
+}
+
 /* Card title override */
 .card-title {
 	font-size: 1rem;
@@ -38,11 +42,11 @@ body {
 }
 
 /* About card */
-.card-block .fa-ul:last-child {
+.card-block .list-unstyled:last-child {
 	margin-bottom: 0;
 }
-.card-block .fa-li {
-	left: -2.5em;
+.list-unstyled .icon {
+	margin-right: .25rem;
 }
 
 /* Photos card */
