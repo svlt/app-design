@@ -1,16 +1,16 @@
 @font-face {
-	font-family: 'entypo';
-	src:url('../fonts/icomoon.eot?9zxj6w');
-	src:url('../fonts/icomoon.eot?#iefix9zxj6w') format('embedded-opentype'),
-		url('../fonts/icomoon.ttf?9zxj6w') format('truetype'),
-		url('../fonts/icomoon.woff?9zxj6w') format('woff'),
-		url('../fonts/icomoon.svg?9zxj6w#icomoon') format('svg');
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot?6t0d33');
+	src:url('../fonts/icomoon.eot?#iefix6t0d33') format('embedded-opentype'),
+		url('../fonts/icomoon.ttf?6t0d33') format('truetype'),
+		url('../fonts/icomoon.woff?6t0d33') format('woff'),
+		url('../fonts/icomoon.svg?6t0d33#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 
 .icon {
-	font-family: 'entypo';
+	font-family: 'icomoon';
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
@@ -23,6 +23,7 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+.icon-svlt:before {content: "\e73e";}
 .icon-add-to-list:before {content: "\e600";}
 .icon-classic-computer:before {content: "\e601";}
 .icon-controller-fast-backward:before {content: "\e602";}

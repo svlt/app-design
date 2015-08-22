@@ -7,8 +7,16 @@ body {
 	vertical-align: middle;
 }
 
+// Navbar
 .navbar-brand {
 	padding-top: .15rem;
+	.icon-svlt {
+		float: left;
+		font-size: 32px;
+		margin-top: -1px;
+		margin-bottom: -2px;
+		margin-right: .5rem;
+	}
 }
 .navbar-fixed-top {
 	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
