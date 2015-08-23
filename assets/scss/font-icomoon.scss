@@ -23,6 +23,20 @@
 	-moz-osx-font-smoothing: grayscale;
 }
 
+@mixin icon {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
 .icon-svlt:before {content: "\e73e";}
 .icon-add-to-list:before {content: "\e600";}
 .icon-classic-computer:before {content: "\e601";}

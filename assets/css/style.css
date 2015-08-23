@@ -252,11 +252,11 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.5;
   color: #373a3c;
-  background-color: #fff; }
+  background-color: #f5f8fa; }
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
@@ -518,7 +518,7 @@ mark,
 .img-thumbnail {
   padding: 0.25rem;
   line-height: 1.5;
-  background-color: #fff;
+  background-color: #f5f8fa;
   border: 1px solid #ddd;
   border-radius: 0.25rem;
   -webkit-transition: all 0.2s ease-in-out;
@@ -1610,7 +1610,7 @@ pre {
   .table tbody + tbody {
     border-top: 2px solid #eceeef; }
   .table .table {
-    background-color: #fff; }
+    background-color: #f5f8fa; }
 
 .table-sm th,
 .table-sm td {
@@ -3125,7 +3125,7 @@ input[type="button"].btn-block {
   .nav-tabs .nav-item.open .nav-link:focus,
   .nav-tabs .nav-item.open .nav-link:hover {
     color: #55595c;
-    background-color: #fff;
+    background-color: #f5f8fa;
     border-color: #ddd #ddd transparent; }
 
 .nav-pills .nav-item {
@@ -4304,7 +4304,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -4391,7 +4391,7 @@ button.close {
   display: block;
   max-width: 276px;
   padding: 1px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   letter-spacing: normal;
@@ -6116,45 +6116,42 @@ a.bg-danger:hover {
 .icon-water:before {
   content: "\e73d"; }
 
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato-Regular.eot");
+  src: url("../fonts/Lato-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Regular.woff2") format("woff2"), url("../fonts/Lato-Regular.woff") format("woff"), url("../fonts/Lato-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato-Semibold.eot");
+  src: url("../fonts/Lato-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/Lato-Semibold.woff2") format("woff2"), url("../fonts/Lato-Semibold.woff") format("woff"), url("../fonts/Lato-Semibold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 500; }
+
+/*! Social Vault | MIT License | github.com/svlt */
+html, body {
+  height: 100%; }
+
 body {
   padding-top: 5em;
-  font-size: 14px;
-  background-color: #f5f8fa; }
+  font-size: 14px; }
 
 .btn .icon {
   vertical-align: middle; }
-
-.navbar-brand {
-  padding-top: .15rem; }
-  .navbar-brand .icon-svlt {
-    float: left;
-    font-size: 32px;
-    margin-top: -1px;
-    margin-bottom: -2px;
-    margin-right: .5rem; }
-
-.navbar-fixed-top {
-  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2); }
-
-.navbar-form .form-control-sm, .navbar-form .input-group-sm > .form-control, .navbar-form .input-group-sm > .input-group-addon, .navbar-form .input-group-sm > .input-group-btn > .btn {
-  margin-top: .1rem; }
-
-.navbar .img-circle {
-  width: 35px;
-  height: 35px; }
-
-.dropdown-nav-user .nav-link {
-  padding-top: 0;
-  padding-bottom: 0; }
 
 .card {
   background-color: #fff; }
 
 .card-title {
   font-size: 1rem;
-  margin-bottom: .5rem; }
+  margin-bottom: 0.5rem; }
   .card-title:last-child {
     margin-bottom: 0; }
+
+.card-block > *:last-child {
+  margin-bottom: 0; }
 
 .card-profile-banner {
   background-color: #777;
@@ -6174,9 +6171,9 @@ body {
   margin-top: -50px;
   width: 100px;
   height: 100px;
-  border: 3px solid #fff;
+  border: 3px solid #f7f7f9;
   border-radius: 100%;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); }
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); }
 
 .card-block .list-unstyled:last-child {
   margin-bottom: 0; }
@@ -6228,13 +6225,72 @@ body {
   margin-bottom: 0; }
 
 .card-stream > .card-block:not(:last-child) {
-  border-bottom: .0625rem solid #e5e5e5; }
-
-.card-block .media-list:last-child {
-  margin-bottom: 0; }
+  border-bottom: 0.0625rem solid #e5e5e5; }
 
 .card-copyright .nav-link:not(:first-child) {
   padding-left: .75rem; }
+
+.navbar-brand {
+  padding-top: .15rem; }
+  .navbar-brand .icon-svlt {
+    float: left;
+    font-size: 32px;
+    margin-top: -1px;
+    margin-bottom: -2px;
+    margin-right: .5rem; }
+
+.navbar-fixed-top {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2); }
+
+.navbar .nav-link {
+  padding-bottom: 0; }
+
+.navbar .nav-link .icon {
+  font-size: 22px;
+  line-height: 1; }
+
+.navbar-form .form-control-sm, .navbar-form .input-group-sm > .form-control, .navbar-form .input-group-sm > .input-group-addon, .navbar-form .input-group-sm > .input-group-btn > .btn {
+  margin-top: .1rem; }
+
+.navbar .img-circle {
+  width: 35px;
+  height: 35px; }
+
+.dropdown-nav-user .nav-link {
+  padding-top: 0;
+  padding-bottom: 0; }
+
+@media (max-width: 47.9em) {
+  .navbar-form {
+    display: none; } }
+
+@media (max-width: 33.9em) {
+  .navbar-brand span {
+    display: none; }
+  .nav-link-home,
+  .nav-link-user,
+  .nav-link-mail {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 0; }
+    .nav-link-home:before,
+    .nav-link-user:before,
+    .nav-link-mail:before {
+      font-size: 22px; }
+  .nav-link-home:before {
+    content: "\e6b8"; }
+  .nav-link-user:before {
+    content: "\e736"; }
+  .nav-link-mail:before {
+    content: "\e6da"; } }
 
 .profile-banner,
 .card-profile-banner {
@@ -6260,17 +6316,30 @@ body {
     max-width: 22rem;
     font-size: 1rem; }
 
+.login-form-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: -5em;
+  height: 100%; }
+
 .login-form {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   width: 18rem;
-  text-align: center; }
+  text-align: center;
+  -webkit-box-flex: 0;
+  -webkit-flex: none;
+      -ms-flex: none;
+          flex: none; }
   .login-form h1 {
     margin-bottom: 2.5rem; }
     .login-form h1 .icon-svlt {
       font-size: 96px; }
-
-@media (min-width: 48em) {
-  .login-form {
-    padding-top: 12rem; } }

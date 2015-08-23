@@ -1,39 +1,15 @@
+/*! Social Vault | MIT License | github.com/svlt */
+html, body {
+	height: 100%;
+}
 body {
 	padding-top: 5em;
 	font-size: 14px;
-	background-color: #f5f8fa;
 }
 
+// Align icons in buttons
 .btn .icon {
 	vertical-align: middle;
-}
-
-// Navbar
-.navbar-brand {
-	padding-top: .15rem;
-	.icon-svlt {
-		float: left;
-		font-size: 32px;
-		margin-top: -1px;
-		margin-bottom: -2px;
-		margin-right: .5rem;
-	}
-}
-.navbar-fixed-top {
-	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
-}
-.navbar-form .form-control-sm {
-	margin-top: .1rem;
-}
-.navbar .img-circle {
-	width: $profile-img-size-nav;
-	height: $profile-img-size-nav;
-}
-.dropdown-nav-user {
-	.nav-link {
-		padding-top: 0;
-		padding-bottom: 0;
-	}
 }
 
 // Card overrides
@@ -41,11 +17,14 @@ body {
 	background-color: #fff;
 }
 .card-title {
-	font-size: 1rem;
-	margin-bottom: .5rem;
+	font-size: $font-size-base;
+	margin-bottom: $headings-margin-bottom;
 	&:last-child {
 		margin-bottom: 0;
 	}
+}
+.card-block > *:last-child {
+	margin-bottom: 0;
 }
 
 // Profile card
@@ -54,7 +33,7 @@ body {
 	min-height: 9rem;
 }
 .card-profile .card-title {
-	font-size: 1.25rem;
+	font-size: $font-size-lg;
 }
 .card-profile-pic {
 	display: block;
@@ -64,12 +43,12 @@ body {
 	text-align: center;
 }
 .card-profile-img {
-	margin-top: -50px;
+	margin-top: -$profile-img-size-card / 2;
 	width: $profile-img-size-card;
 	height: $profile-img-size-card;
-	border: 3px solid #fff;
+	border: 3px solid $gray-lightest;
 	border-radius: 100%;
-	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
 }
 
 // About card
@@ -119,12 +98,7 @@ body {
 	margin-bottom: 0;
 }
 .card-stream > .card-block:not(:last-child) {
-	border-bottom: .0625rem solid #e5e5e5;
-}
-
-// Recommended buddies card
-.card-block .media-list:last-child {
-	margin-bottom: 0;
+	border-bottom: $card-border-width solid $card-border-color;
 }
 
 // Copyright card

@@ -1,22 +1,32 @@
-$brand-primary:             #0087cb !default;
+// Variable overrides
+$brand-primary:             #0087cb;
+$body-bg:                   #f5f8fa;
+$font-family-sans-serif:    'Lato', Helvetica, Arial, sans-serif;
 
-$input-border-focus:        lighten($brand-primary, 10%) !default;
-$input-box-shadow-focus:    rgba($brand-primary, .5) !default;
+$input-border-focus:        lighten($brand-primary, 10%);
+$input-box-shadow-focus:    rgba($brand-primary, .5);
 
-$enable-flex:               true !default;
-$enable-rounded:            true !default;
-$enable-shadows:            true !default;
-$enable-gradients:          true !default;
-$enable-transitions:        false !default;
-$enable-hover-media-query:  false !default;
+$enable-flex:               true;
+$enable-rounded:            true;
+$enable-shadows:            true;
+$enable-gradients:          true;
+$enable-transitions:        false;
+$enable-hover-media-query:  false;
 
 $profile-img-size-nav:      35px;
 $profile-img-size-card:     100px;
 $profile-img-size-post:     60px;
 $profile-img-size-comment:  40px;
 
+// Bootstrap
 @import "../bower_components/bootstrap/scss/bootstrap";
-@import "entypo";
+
+// Fonts
+@import "font-icomoon";
+@import "font-lato";
+
+// Site styles
 @import "global";
+@import "navbar";
 @import "profile";
 @import "login";
