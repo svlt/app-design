@@ -1,0 +1,32 @@
+// Hide most cards on the stream for sm and xs
+@include media-breakpoint-down(sm) {
+	body {
+		padding-top: $navbar-height;
+	}
+	.col-stream, .col-side {
+		width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.col-side > :not(.card-copyright) {
+		display: none;
+	}
+}
+
+// Borderless xs
+@include media-breakpoint-down(xs) {
+	.card {
+		border-left: none;
+		border-right: none;
+		border-radius: 0;
+		margin-bottom: -$border-width;
+	}
+}
+
+// Reduce some sizes on md
+@include media-breakpoint-down(lg) {
+	.card-recommended .profile-pic {
+		width: $profile-img-size-comment;
+		height: $profile-img-size-comment;
+	}
+}

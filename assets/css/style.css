@@ -6135,7 +6135,6 @@ html, body {
   height: 100%; }
 
 body {
-  padding-top: 5em;
   font-size: 14px; }
 
 .btn .icon {
@@ -6153,8 +6152,11 @@ body {
 .card-block > *:last-child {
   margin-bottom: 0; }
 
+.dropdown-menu {
+  font-size: 14px; }
+
 .card-profile-banner {
-  background-color: #777;
+  background-color: #55595c;
   min-height: 9rem; }
 
 .card-profile .card-title {
@@ -6164,60 +6166,22 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 100px;
-  text-align: center; }
+  width: 100px; }
 
 .card-profile-img {
   margin-top: -50px;
   width: 100px;
   height: 100px;
-  border: 3px solid #f7f7f9;
-  border-radius: 100%;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15); }
-
-.card-block .list-unstyled:last-child {
-  margin-bottom: 0; }
+  border-radius: 100%; }
 
 .list-unstyled .icon {
-  margin-right: .25rem; }
+  margin-right: 0.25rem; }
 
-.photo-list {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  margin-right: -.25rem;
-  margin-bottom: 1rem; }
-
-.photo-list-item {
-  -webkit-box-flex: 1;
-  -webkit-flex: auto;
-      -ms-flex: auto;
-          flex: auto;
-  width: 120px;
-  margin: 0 0.25rem 0.25rem 0; }
-
-.photo-list-item img {
-  width: 100%;
-  height: auto; }
-
-.card-photos .photo-list-item {
-  width: 90px; }
-
-.card-block .photo-list:last-child {
-  margin-bottom: 0; }
-
-.media-post {
-  margin-bottom: 0; }
-
-.media-post > .media-left .media-object {
+.media-post > .media-left .profile-pic {
   width: 60px;
   height: 60px; }
 
-.media-comment > .media-left .media-object {
+.media-comment > .media-left .profile-pic {
   width: 40px;
   height: 40px; }
 
@@ -6227,8 +6191,15 @@ body {
 .card-stream > .card-block:not(:last-child) {
   border-bottom: 0.0625rem solid #e5e5e5; }
 
+.card-recommended .profile-pic {
+  width: 60px;
+  height: 60px; }
+
 .card-copyright .nav-link:not(:first-child) {
-  padding-left: .75rem; }
+  padding-left: 0.75rem; }
+
+body {
+  padding-top: 4.875rem; }
 
 .navbar-brand {
   padding-top: .15rem; }
@@ -6252,7 +6223,7 @@ body {
 .navbar-form .form-control-sm, .navbar-form .input-group-sm > .form-control, .navbar-form .input-group-sm > .input-group-addon, .navbar-form .input-group-sm > .input-group-btn > .btn {
   margin-top: .1rem; }
 
-.navbar .img-circle {
+.navbar .profile-pic {
   width: 35px;
   height: 35px; }
 
@@ -6292,13 +6263,50 @@ body {
   .nav-link-mail:before {
     content: "\e6da"; } }
 
+.photo-list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-right: -0.25rem;
+  margin-bottom: 0.75rem; }
+
+.photo-list-item {
+  -webkit-box-flex: 1;
+  -webkit-flex: auto;
+      -ms-flex: auto;
+          flex: auto;
+  width: 8rem;
+  margin: 0 0.25rem 0.25rem 0; }
+
+@media (max-width: 47.9em) {
+  .photo-list-item {
+    width: 7rem; } }
+
+.photo-list-sm .photo-list-item {
+  width: 6.5rem; }
+
+@media (max-width: 74.9em) {
+  .photo-list-sm .photo-list-item {
+    width: 5rem; } }
+
+.photo-list-item img {
+  width: 100%;
+  height: auto; }
+
+.profile-pic {
+  border-radius: 100%; }
+
 .profile-banner,
 .card-profile-banner {
   background-position: center center;
   background-size: cover; }
 
 .jumbotron-profile {
-  margin-top: -1.125rem;
+  margin-top: -1.875rem;
   text-align: center;
   color: #fff;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2); }
@@ -6343,3 +6351,25 @@ body {
     margin-bottom: 2.5rem; }
     .login-form h1 .icon-svlt {
       font-size: 96px; }
+
+@media (max-width: 47.9em) {
+  body {
+    padding-top: 3rem; }
+  .col-stream, .col-side {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0; }
+  .col-side > :not(.card-copyright) {
+    display: none; } }
+
+@media (max-width: 33.9em) {
+  .card {
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    margin-bottom: -0.0625rem; } }
+
+@media (max-width: 74.9em) {
+  .card-recommended .profile-pic {
+    width: 40px;
+    height: 40px; } }

@@ -1,6 +1,7 @@
-// Variable overrides
+// Bootstrap variable overrides
 $brand-primary:             #0087cb;
 $body-bg:                   #f5f8fa;
+
 $font-family-sans-serif:    'Lato', Helvetica, Arial, sans-serif;
 
 $input-border-focus:        lighten($brand-primary, 10%);
@@ -13,10 +14,22 @@ $enable-gradients:          true;
 $enable-transitions:        false;
 $enable-hover-media-query:  false;
 
+// App variables
+$font-size-body:            14px;
+$navbar-height:             3rem;
+
 $profile-img-size-nav:      35px;
 $profile-img-size-card:     100px;
 $profile-img-size-post:     60px;
 $profile-img-size-comment:  40px;
+
+$profile-card-cover-size:   9rem;
+
+$photo-list-spacing:        .25rem;
+$photo-list-img-size:       8rem;
+$photo-list-img-size-md:    7rem;
+$photo-list-img-size-sm:    6.5rem;
+$photo-list-img-size-xs:    5rem;
 
 // Bootstrap
 @import "../bower_components/bootstrap/scss/bootstrap";
@@ -28,5 +41,7 @@ $profile-img-size-comment:  40px;
 // Site styles
 @import "global";
 @import "navbar";
+@import "photo-list";
 @import "profile";
 @import "login";
+@import "mobile-toggles";
