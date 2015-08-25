@@ -7,5 +7,8 @@
     "gulp-notify": "^2.2.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.0.4"
+  },
+  "devDependencies": {
+    "bower": "~1.5.1"
   }
 }
