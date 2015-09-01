@@ -5192,7 +5192,7 @@ a.bg-danger:hover {
       display: inline-block !important; } }
 
 @media print {
-  .hidden-print .hidden-print {
+  .hidden-print {
     display: none !important; } }
 
 @font-face {
