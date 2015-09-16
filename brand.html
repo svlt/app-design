@@ -31,6 +31,11 @@
 		line-height: 1;
 	}
 
+	.font .col-sm-4 > :last-child,
+	.font .col-sm-8 > :last-child {
+		margin-bottom: 0;
+	}
+
 	/* layout */
 	.layout {
 		width: 256px;
@@ -71,7 +76,6 @@
 	.layout .crd {
 		min-height: 120px;
 		margin: 5px;
-		background-color: #fff;
 		border: 1px solid #eee;
 		border-radius: 2px;
 	}
@@ -82,7 +86,7 @@
 	}
 	.layout .bn {
 		display: inline-block;
-		margin: 40px 5px 10px;
+		margin: 30px 5px 10px;
 		width: 30px;
 		height: 8px;
 		border-radius: 2px;
@@ -106,7 +110,7 @@
 		<hr>
 
 		<h2>Logo</h2>
-		<p>Social Vault is currently using a simple "vault door" glyph. The logo should generally be displayed in <code class="text-primary brand-color-text"></code>, but can be white, black, or gray to match its surroundings. For example the site navbar is the primary color, and the logo is rendered in white on it.</p>
+		<p>Social Vault is currently using a simple "vault door" glyph. The logo should generally be displayed in <code class="text-primary brand-color-text">SV blue</code>, but can be white, black, or gray to match its surroundings. For example the site navbar is the primary color, and the logo is rendered in white on it.</p>
 		<div class="logos">
 			<i class="icon icon-svlt text-primary"></i>
 			<i class="icon icon-svlt"></i>
@@ -115,6 +119,27 @@
 			<a class="btn btn-primary-outline" href="../logo/svlt.min.svg"><span class="hidden-xs-down">Download</span> SVG</a>
 			<a class="btn btn-primary-outline" href="../logo/svlt.png">PNG</a>
 			<a class="btn btn-primary-outline" href="../logo/svlt-blue.png">PNG (Blue)</a>
+		</div>
+
+		<hr>
+
+		<h2>Font</h2>
+		<p>The Lato font is used for headings, content, and UI elements. Headings are rendered at <code>500</code> weight, body and UI text at <code>400</code>.</p>
+		<div class="card font">
+			<div class="card-block">
+				<div class="row">
+					<div class="col-sm-4">
+						<h1>Heading 1</h1>
+						<h2>Heading 2</h2>
+						<h3>Heading 3</h3>
+						<h4>Heading 4</h4>
+					</div>
+					<div class="col-sm-8">
+						<p class="lead">Lead text block. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						<p>Paragraph text block. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					</div>
+				</div>
+			</div>
 		</div>
 
 		<hr>
@@ -132,15 +157,15 @@
 			</div>
 			<div class="con clearfix">
 				<div class="col">
-					<div class="crd"></div>
+					<div class="crd card-default"></div>
 				</div>
 				<div class="col">
-					<div class="crd">
+					<div class="crd card-default">
 						<div class="bn bg-primary"></div>
 					</div>
 				</div>
 				<div class="col">
-					<div class="crd"></div>
+					<div class="crd card-default"></div>
 				</div>
 			</div>
 		</div>
