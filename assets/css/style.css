@@ -583,10 +583,6 @@ pre {
   margin-left: auto;
   padding-left: 0.9375rem;
   padding-right: 0.9375rem; }
-  .container::after {
-    content: "";
-    display: table;
-    clear: both; }
   @media (min-width: 34em) {
     .container {
       max-width: 34rem; } }
@@ -605,10 +601,6 @@ pre {
   margin-left: auto;
   padding-left: 0.9375rem;
   padding-right: 0.9375rem; }
-  .container-fluid::after {
-    content: "";
-    display: table;
-    clear: both; }
 
 .row {
   display: -webkit-box;
@@ -3996,7 +3988,7 @@ a.label:hover {
   position: relative;
   display: block;
   padding: 0.75rem 1.25rem;
-  margin-bottom: -.0625rem;
+  margin-bottom: -0.0625rem;
   background-color: #fff;
   border: 0.0625rem solid #ddd; }
   .list-group-item:first-child {
@@ -4008,7 +4000,7 @@ a.label:hover {
     border-bottom-left-radius: 0.25rem; }
 
 .list-group-flush .list-group-item {
-  border-width: .0625rem 0;
+  border-width: 0.0625rem 0;
   border-radius: 0; }
 
 a.list-group-item,
