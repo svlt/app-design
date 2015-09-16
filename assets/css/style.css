@@ -6251,7 +6251,8 @@ body {
 
 .navbar .profile-pic {
   width: 35px;
-  height: 35px; }
+  height: 35px;
+  box-shadow: 0 0 0 0.125rem; }
 
 .dropdown-nav-user .nav-link {
   padding-top: 0;

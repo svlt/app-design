@@ -39,6 +39,7 @@ body {
 .navbar .profile-pic {
 	width: $profile-img-size-nav;
 	height: $profile-img-size-nav;
+    box-shadow: 0 0 0 ($border-width * 2);
 }
 .dropdown-nav-user {
 	.nav-link {
