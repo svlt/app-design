@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- This is a work-in-progress design mockup for svlt/front -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Brand Guidelines</title>
+	<link rel="stylesheet" href="assets/css/style.css">
+	<style>
+	.container {
+		margin-bottom: 5em;
+	}
+	hr {
+		margin-top: 2em;
+		margin-bottom: 2em;
+	}
+	.brand-color .bg-primary {
+		display: inline-block;
+		width: 128px;
+		height: 128px;
+		text-align: center;
+		border-radius: 8px;
+	}
+	.brand-color .bg-primary .brand-color-text {
+		line-height: 128px;
+		font-size: 18px;
+	}
+	.logos {
+		font-size: 128px;
+		line-height: 1;
+	}
+
+	/* layout */
+	.layout {
+		width: 256px;
+		/*height: 128px;*/
+		border: 1px solid #ccc;
+		border-radius: 2px;
+	}
+	.layout .nb {
+		height: 28px;
+		font-size: 9px;
+		line-height: 1;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.layout .nb .icon {
+		color: #fff;
+		font-size: 18px;
+		line-height: 28px;
+	}
+	.layout .nb .pull-right .icon {
+		opacity: 0.75;
+		font-size: 16px;
+	}
+	.layout .nb .in {
+		display: inline-block;
+		width: 60px;
+		height: 15px;
+		background-color: #fff;
+		border-radius: 2px;
+	}
+	.layout .con > .col {
+		float: left;
+		width: 25%;
+	}
+	.layout .con > .col:nth-child(2) {
+		width: 50%;
+	}
+	.layout .crd {
+		min-height: 120px;
+		margin: 5px;
+		background-color: #fff;
+		border: 1px solid #eee;
+		border-radius: 2px;
+	}
+	.layout .col:nth-child(2) .crd {
+		margin-left: 0;
+		margin-right: 0;
+		text-align: right;
+	}
+	.layout .bn {
+		display: inline-block;
+		margin: 40px 5px 10px;
+		width: 30px;
+		height: 8px;
+		border-radius: 2px;
+	}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>Brand Guidelines</h1>
+
+		<hr>
+
+		<h2>Colors</h2>
+		<p>Social Vault uses a consistent blue color for branding. It can be mixed with other colors, but no other standard colors are defined yet.</p>
+		<div class="brand-color">
+			<div class="bg-primary">
+				<span class="brand-color-text"></span>
+			</div>
+		</div>
+
+		<hr>
+
+		<h2>Logo</h2>
+		<p>Social Vault is currently using a simple "vault door" glyph. The logo should generally be displayed in <code class="text-primary brand-color-text"></code>, but can be white, black, or gray to match its surroundings. For example the site navbar is the primary color, and the logo is rendered in white on it.</p>
+		<div class="logos">
+			<i class="icon icon-svlt text-primary"></i>
+			<i class="icon icon-svlt"></i>
+		</div>
+		<div class="btn-group">
+			<a class="btn btn-primary-outline" href="../logo/svlt.min.svg"><span class="hidden-xs-down">Download</span> SVG</a>
+			<a class="btn btn-primary-outline" href="../logo/svlt.png">PNG</a>
+			<a class="btn btn-primary-outline" href="../logo/svlt-blue.png">PNG (Blue)</a>
+		</div>
+
+		<hr>
+
+		<h2>Layout colors</h2>
+		<p>The use of colors in major parts of the layout should be consistent. The primary brand color is used for navigation and primary buttons.</p>
+		<div class="layout">
+			<div class="nb bg-primary clearfix">
+				<i class="icon icon-svlt"></i>
+				<div class="pull-right">
+					<div class="in"></div>
+					<i class="icon icon-bell"></i>
+					<i class="icon icon-user"></i>
+				</div>
+			</div>
+			<div class="con clearfix">
+				<div class="col">
+					<div class="crd"></div>
+				</div>
+				<div class="col">
+					<div class="crd">
+						<div class="bn bg-primary"></div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="crd"></div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<script>
+		function rgb2hex(rgb) {
+			rgb = rgb.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
+			function hex(x) {
+				return ("0" + parseInt(x).toString(16)).slice(-2);
+			}
+			return "#" + hex(rgb[1]) + hex(rgb[2]) + hex(rgb[3]);
+		}
+
+		var style = getComputedStyle(document.querySelector('.bg-primary')),
+			brandColor = rgb2hex(style.getPropertyValue('background-color')),
+			brandColorText = document.querySelectorAll('.brand-color-text');
+
+		console.log([brandColor, brandColorText]);
+		for (var i = 0, max = brandColorText.length; i < max; i++) {
+			brandColorText[i].textContent = brandColor;
+		}
+	</script>
+</body>
+</html>
