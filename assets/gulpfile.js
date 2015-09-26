@@ -13,7 +13,7 @@ gulp.task('scss', function() {
 		.pipe(autoprefixer())
 		.pipe(gulp.dest('css'))
 		.pipe(rename({suffix: '.min'}))
-		.pipe(minifycss())
+		.pipe(minifycss({keepSpecialComments: 0}))
 		.pipe(gulp.dest('css'))
 		.pipe(notify({
 			message: 'SCSS compiled!'

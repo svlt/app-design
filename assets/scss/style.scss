@@ -33,10 +33,11 @@ $photo-list-img-size-xs:    5rem;
 
 // Bootstrap
 @import "../bower_components/bootstrap/scss/bootstrap";
+@import "https://fonts.googleapis.com/css?family=Lato:400,700";
 
 // Fonts
 @import "font-icomoon";
-@import "font-lato";
+// @import "font-lato";
 
 // Site styles
 @import "global";
