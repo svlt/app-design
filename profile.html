@@ -32,7 +32,7 @@
 				</form>
 				<ul class="nav navbar-nav pull-left">
 					<li class="nav-item">
-						<a class="nav-link" href="#" title="Notifications" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-content="No new notifications">
+						<a class="nav-link" id="btn-notifications" href="notifications.html" title="Notifications">
 							<i class="icon icon-bell"></i>
 						</a>
 					</li>
@@ -42,7 +42,7 @@
 								<img src="../app-design-img/profile-pics/men/49.jpg" class="profile-pic" alt>
 							</a>
 							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="ddUser">
-								<a class="dropdown-item" href="profile.html">Profile</a>
+								<a class="dropdown-item active" href="profile.html">Profile</a>
 								<a class="dropdown-item" href="settings.html">Settings</a>
 								<div class="dropdown-divider"></div>
 								<a class="dropdown-item" href="login.html">Log out</a>
@@ -66,29 +66,25 @@
 		<div class="row">
 			<div class="col-md-3">
 
-				<div class="card card-default">
-					<div class="card-block">
-						<h4 class="card-title">About</h4>
-						<ul class="list-unstyled">
-							<li><i class="icon icon-users"></i> 238 <a href="#">Buddies</a></li>
-							<li><i class="icon icon-briefcase"></i> Works at <a href="#">Social Vault</a></li>
-							<li><i class="icon icon-home"></i> Lives in <a href="#">Portland, OR</a></li>
-							<li><i class="icon icon-location-pin"></i> From <a href="#">Seattle, WA</a></li>
-						</ul>
-					</div>
+				<div class="card card-block card-default">
+					<h4 class="card-title">About</h4>
+					<ul class="list-unstyled">
+						<li><i class="icon icon-users"></i> 238 <a href="#">Buddies</a></li>
+						<li><i class="icon icon-briefcase"></i> Works at <a href="#">Social Vault</a></li>
+						<li><i class="icon icon-home"></i> Lives in <a href="#">Portland, OR</a></li>
+						<li><i class="icon icon-location-pin"></i> From <a href="#">Seattle, WA</a></li>
+					</ul>
 				</div>
 
-				<div class="card card-photos">
-					<div class="card-block">
-						<h4 class="card-title">Photos</h4>
-						<div class="photo-list photo-list-sm">
-							<a class="photo-list-item" href="#"><img src="../app-design-img/user-img/2.jpg"></a>
-							<a class="photo-list-item" href="#"><img src="../app-design-img/user-img/3.jpg"></a>
-							<a class="photo-list-item" href="#"><img src="../app-design-img/user-img/4.jpg"></a>
-							<a class="photo-list-item" href="#"><img src="../app-design-img/user-img/5.jpg"></a>
-							<a class="photo-list-item" href="#"><img src="../app-design-img/user-img/6.jpg"></a>
-							<a class="photo-list-item" href="#"><img src="../app-design-img/user-img/7.jpg"></a>
-						</div>
+				<div class="card card-block card-photos">
+					<h4 class="card-title">Photos</h4>
+					<div class="photo-list photo-list-sm">
+						<a class="photo-list-item" href="#"><img src="../app-design-img/user-img/2.jpg"></a>
+						<a class="photo-list-item" href="#"><img src="../app-design-img/user-img/3.jpg"></a>
+						<a class="photo-list-item" href="#"><img src="../app-design-img/user-img/4.jpg"></a>
+						<a class="photo-list-item" href="#"><img src="../app-design-img/user-img/5.jpg"></a>
+						<a class="photo-list-item" href="#"><img src="../app-design-img/user-img/6.jpg"></a>
+						<a class="photo-list-item" href="#"><img src="../app-design-img/user-img/7.jpg"></a>
 					</div>
 				</div>
 
@@ -111,16 +107,16 @@
 							</fieldset>
 						</form>
 					</div>
-					<div class="card-block">
+					<article class="card-block">
 						<div class="media media-post">
 							<a class="media-left" href="profile.html">
 								<img class="media-object profile-pic" src="../app-design-img/profile-pics/men/48.jpg" alt>
 							</a>
 							<div class="media-body">
-								<div class="clearfix">
-									<b class="pull-left">Jonah Cox</b>
-									<small class="pull-right text-muted">34 min</small>
-								</div>
+								<header>
+									<a class="name" href="profile.html">Jonah Cox</a>
+									<span class="timestamp">34 min</span>
+								</header>
 								<p>Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
 								<img class="img-fluid" src="../app-design-img/user-img/1.jpg" alt>
 								<br>
@@ -130,23 +126,24 @@
 											<img class="media-object profile-pic" src="../app-design-img/profile-pics/men/49.jpg" alt>
 										</a>
 										<div class="media-body">
-											<strong>Ken Taylor:</strong> Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis.
+											<a class="name" href="profile.html">Ken Taylor</a>
+											Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis.
 										</div>
 									</li>
 								</ul>
 							</div>
 						</div>
-					</div>
-					<div class="card-block">
+					</article>
+					<article class="card-block">
 						<div class="media media-post">
 							<a class="media-left" href="profile.html">
 								<img class="media-object profile-pic" src="../app-design-img/profile-pics/men/49.jpg" alt>
 							</a>
 							<div class="media-body">
-								<div class="clearfix">
-									<b class="pull-left">Ken Taylor</b>
-									<small class="pull-right text-muted">4 min</small>
-								</div>
+								<header>
+									<a class="name" href="profile.html">Ken Taylor</a>
+									<span class="timestamp">4 min</span>
+								</header>
 								<p>Aenean lacinia bibendum nulla sed consectetur. Vestibulum id ligula porta felis euismod semper. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
 								<ul class="media-list media-list-comments">
 									<li class="media media-comment">
@@ -154,7 +151,8 @@
 											<img class="media-object profile-pic" src="../app-design-img/profile-pics/women/37.jpg" alt>
 										</a>
 										<div class="media-body">
-											<strong>June Whitely:</strong> Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis.
+											<a class="name" href="profile.html">June Whitely</a>
+											Donec id elit non mi porta gravida at eget metus. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Sed posuere consectetur est at lobortis.
 										</div>
 									</li>
 									<li class="media media-comment">
@@ -162,13 +160,14 @@
 											<img class="media-object profile-pic" src="../app-design-img/profile-pics/men/48.jpg" alt>
 										</a>
 										<div class="media-body">
-											<strong>Jonah Cox:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+											<a class="name" href="profile.html">Jonah Cox</a>
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
 										</div>
 									</li>
 								</ul>
 							</div>
 						</div>
-					</div>
+					</article>
 				</div>
 
 			</div>
@@ -230,16 +229,14 @@
 					</div>
 				</div>
 
-				<div class="card card-copyright">
-					<div class="card-block">
-						<p>&copy; 2015 Social Vault</p>
-						<nav class="nav">
-							<a class="nav-link" href="#">About</a>
-							<a class="nav-link" href="#">Terms</a>
-							<a class="nav-link" href="#">Help</a>
-							<a class="nav-link" href="https://github.com/svlt">GitHub</a>
-						</nav>
-					</div>
+				<div class="card card-block card-copyright">
+					<p>&copy; 2015 Social Vault</p>
+					<nav class="nav">
+						<a class="nav-link" href="#">About</a>
+						<a class="nav-link" href="#">Terms</a>
+						<a class="nav-link" href="#">Help</a>
+						<a class="nav-link" href="https://github.com/svlt">GitHub</a>
+					</nav>
 				</div>
 
 			</div>

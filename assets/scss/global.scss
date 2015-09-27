@@ -22,7 +22,11 @@ body {
 		margin-bottom: 0;
 	}
 }
-.card-block > *:last-child {
+
+// Extra margin removal
+.card-block > :last-child,
+.media-body > :last-child,
+.media-list > .media:last-child, {
 	margin-bottom: 0;
 }
 
@@ -55,20 +59,92 @@ body {
 	margin-right: $font-size-base / 4;
 }
 
-// Stream card
-.media-post > .media-left .profile-pic {
-	width: $profile-img-size-post;
-	height: $profile-img-size-post;
+// Stream card (stacked cards in a single card)
+.card-stream {
+	> .card-block:first-child .form-group {
+		margin-bottom: 0;
+	}
+	> .card-block:not(:last-child) {
+		border-bottom: $card-border-width solid $card-border-color;
+	}
 }
-.media-comment > .media-left .profile-pic {
-	width: $profile-img-size-comment;
-	height: $profile-img-size-comment;
+
+// Posts and comments
+.media-post {
+	> .media-body > header {
+		@include clearfix;
+		.name {
+			@include pull-left;
+			font-weight: bold;
+			color: inherit;
+		}
+		.timestamp {
+			@include pull-right;
+			font-size: $font-size-sm;
+			color: $text-muted;
+		}
+	}
+	.profile-pic {
+		width: $profile-img-size-post;
+		height: $profile-img-size-post;
+	}
 }
-.card-stream > .card-block:first-child .form-group {
-	margin-bottom: 0;
+.media-comment {
+	.name {
+		font-weight: bold;
+		color: inherit;
+		&:after {
+			content: ':';
+		}
+	}
+	.profile-pic {
+		width: $profile-img-size-comment;
+		height: $profile-img-size-comment;
+	}
 }
-.card-stream > .card-block:not(:last-child) {
-	border-bottom: $card-border-width solid $card-border-color;
+
+// Notifications
+.notification {
+	@include clearfix;
+	.icon {
+		@include pull-left;
+		margin-right: $spacer / 2;
+		line-height: inherit;
+	}
+	.timestamp {
+		@include pull-right;
+		font-size: $font-size-sm;
+		color: $text-muted;
+	}
+}
+.popover-content-notifications {
+	min-width: 244px;
+	hr {
+		margin-top: $spacer * .75;
+		margin-bottom: $spacer * .75;
+	}
+	.notification-list {
+		margin-bottom: 0;
+	}
+}
+.notification-list {
+	list-style: none;
+	padding-left: 0;
+}
+.card-block-notification {
+	.notification + * {
+		margin-left: $spacer * 1.5;
+	}
+	.card-post, .card-deck {
+		margin-top: $spacer;
+	}
+}
+.notification-imgs {
+	img {
+		margin-top: $spacer / 2;
+		width: $profile-img-size-notif;
+		height: $profile-img-size-notif;
+	}
 }
 
 // Recommended buddies card

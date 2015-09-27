@@ -27,13 +27,16 @@ gulp.task('js', function() {
 		'bower_components/jquery/dist/jquery.min.js',
 		'bower_components/tether/dist/js/tether.min.js',
 		'bower_components/bootstrap/dist/js/bootstrap.min.js',
+		'bower_components/geopattern/js/geopattern.min.js',
 		'js/src/script.js'
 	];
 	gulp.src(scripts)
 		.pipe(concat('script.js', {newLine: '\n'}))
 		.pipe(gulp.dest('js'))
 		.pipe(rename({suffix: '.min'}))
-		.pipe(uglify())
+		.pipe(uglify().on('error', notify.onError(function(error) {
+				return 'Error compiling JS: ' + error.message;
+			})))
 		.pipe(gulp.dest('js'))
 		.pipe(notify({
 			message: 'JS compiled!'

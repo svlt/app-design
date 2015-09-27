@@ -6162,7 +6162,9 @@ body {
   .card-title:last-child {
     margin-bottom: 0; }
 
-.card-block > *:last-child {
+.card-block > :last-child,
+.media-body > :last-child,
+.media-list > .media:last-child {
   margin-bottom: 0; }
 
 .dropdown-menu {
@@ -6190,19 +6192,78 @@ body {
 .list-unstyled .icon {
   margin-right: 0.25rem; }
 
-.media-post > .media-left .profile-pic {
-  width: 60px;
-  height: 60px; }
-
-.media-comment > .media-left .profile-pic {
-  width: 40px;
-  height: 40px; }
-
 .card-stream > .card-block:first-child .form-group {
   margin-bottom: 0; }
 
 .card-stream > .card-block:not(:last-child) {
   border-bottom: 0.0625rem solid #e5e5e5; }
+
+.media-post > .media-body > header::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.media-post > .media-body > header .name {
+  float: left !important;
+  font-weight: bold;
+  color: inherit; }
+
+.media-post > .media-body > header .timestamp {
+  float: right !important;
+  font-size: 0.85rem;
+  color: #818a91; }
+
+.media-post .profile-pic {
+  width: 60px;
+  height: 60px; }
+
+.media-comment .name {
+  font-weight: bold;
+  color: inherit; }
+  .media-comment .name:after {
+    content: ':'; }
+
+.media-comment .profile-pic {
+  width: 40px;
+  height: 40px; }
+
+.notification::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.notification .icon {
+  float: left !important;
+  margin-right: 0.5rem;
+  line-height: inherit; }
+
+.notification .timestamp {
+  float: right !important;
+  font-size: 0.85rem;
+  color: #818a91; }
+
+.popover-content-notifications {
+  min-width: 244px; }
+  .popover-content-notifications hr {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem; }
+  .popover-content-notifications .notification-list {
+    margin-bottom: 0; }
+
+.notification-list {
+  list-style: none;
+  padding-left: 0; }
+
+.card-block-notification .notification + * {
+  margin-left: 1.5rem; }
+
+.card-block-notification .card-post, .card-block-notification .card-deck {
+  margin-top: 1rem; }
+
+.notification-imgs img {
+  margin-top: 0.5rem;
+  width: 32px;
+  height: 32px; }
 
 .card-recommended .profile-pic {
   width: 60px;
