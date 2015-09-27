@@ -3,6 +3,8 @@ var gulp = require('gulp'),
 	autoprefixer = require('gulp-autoprefixer'),
 	minifycss = require('gulp-minify-css'),
 	rename = require('gulp-rename'),
+	concat = require('gulp-concat'),
+	uglify = require('gulp-uglify'),
 	notify = require('gulp-notify');
 
 gulp.task('scss', function() {
@@ -20,8 +22,27 @@ gulp.task('scss', function() {
 		}));
 });
 
-gulp.task('default', ['scss', 'watch']);
+gulp.task('js', function() {
+	var scripts = [
+		'bower_components/jquery/dist/jquery.min.js',
+		'bower_components/tether/dist/js/tether.min.js',
+		'bower_components/bootstrap/dist/js/bootstrap.min.js',
+		'js/src/script.js'
+	];
+	gulp.src(scripts)
+		.pipe(concat('script.js', {newLine: '\n'}))
+		.pipe(gulp.dest('js'))
+		.pipe(rename({suffix: '.min'}))
+		.pipe(uglify())
+		.pipe(gulp.dest('js'))
+		.pipe(notify({
+			message: 'JS compiled!'
+		}));
+});
+
+gulp.task('default', ['scss', 'js', 'watch']);
 
 gulp.task('watch', function() {
 	gulp.watch('scss/*.scss', ['scss']);
+	gulp.watch(['bower_components/**/dist/*.js', 'js/src/**.js'], ['js']);
 });

@@ -6,58 +6,50 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="referrer" content="never">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>Social Vault</title>
+	<title>Ken Taylor &ndash; Social Vault</title>
 	<link rel="stylesheet" href="assets/css/style.min.css">
 </head>
 <body>
 	<div class="navbar navbar-dark bg-primary navbar-fixed-top">
 		<div class="container">
 			<a class="navbar-brand" href=".">
-				<i class="icon icon-svlt"></i> Social Vault
+				<i class="icon icon-svlt"></i> <span>Social Vault</span>
 			</a>
-			<button class="navbar-toggler hidden-sm-up pull-right" type="button" data-toggle="collapse" data-target="#navCollapse">
-				&#9776;
-			</button>
-			<div class="collapse navbar-toggleable-xs" id="navCollapse">
-				<ul class="nav navbar-nav">
+			<ul class="nav navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link nav-link-home" href=".">Stream</a>
+				</li>
+				<li class="nav-item active">
+					<a class="nav-link nav-link-user" href="profile.html">Profile</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link nav-link-mail" href="messages.html">Messages</a>
+				</li>
+			</ul>
+			<div class="pull-right">
+				<form class="form-inline navbar-form pull-left">
+					<input class="form-control form-control-sm" type="search" placeholder="Search">
+				</form>
+				<ul class="nav navbar-nav pull-left">
 					<li class="nav-item">
-						<a class="nav-link" href=".">Stream</a>
-					</li>
-					<li class="nav-item active">
-						<a class="nav-link" href="profile.html">Profile</a>
+						<a class="nav-link" href="#" title="Notifications" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-content="No new notifications">
+							<i class="icon icon-bell"></i>
+						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Messages</a>
+						<div class="dropdown dropdown-nav-user">
+							<a class="nav-link" href="profile.html" id="ddUser" data-toggle="dropdown">
+								<img src="../app-design-img/profile-pics/men/49.jpg" class="profile-pic" alt>
+							</a>
+							<div class="dropdown-menu dropdown-menu-right" aria-labelledby="ddUser">
+								<a class="dropdown-item" href="profile.html">Profile</a>
+								<a class="dropdown-item" href="settings.html">Settings</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="login.html">Log out</a>
+							</div>
+						</div>
 					</li>
 				</ul>
-				<div class="pull-right">
-					<form class="form-inline navbar-form pull-left">
-						<input class="form-control form-control-sm" type="search" placeholder="Search">
-					</form>
-					<ul class="nav navbar-nav pull-left">
-						<li class="nav-item">
-							<!-- Temporary empty item for spacing -->
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#" title="Notifications" data-toggle="popover" data-trigger="focus" data-placement="bottom" data-content="No new notifications">
-								<i class="icon icon-bell"></i>
-							</a>
-						</li>
-						<li class="nav-item">
-							<div class="dropdown dropdown-nav-user">
-								<a class="nav-link" href="profile.html" id="ddUser" data-toggle="dropdown">
-									<img src="../app-design-img/profile-pics/men/49.jpg" class="profile-pic" alt>
-								</a>
-								<div class="dropdown-menu dropdown-menu-right" aria-labelledby="ddUser">
-									<a class="dropdown-item" href="profile.html">Profile</a>
-									<a class="dropdown-item" href="#">Settings</a>
-									<div class="dropdown-divider"></div>
-									<a class="dropdown-item" href="login.html">Log out</a>
-								</div>
-							</div>
-						</li>
-					</ul>
-				</div>
 			</div>
 		</div>
 	</div>
@@ -254,10 +246,6 @@
 		</div>
 	</div>
 
-	<script src="assets/bower_components/jquery/dist/jquery.min.js"></script>
-	<script src="assets/bower_components/tether/dist/js/tether.min.js"></script>
-	<script src="assets/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script src="assets/bower_components/geopattern/js/geopattern.min.js"></script>
 	<script src="assets/js/script.js"></script>
 </body>
 </html>

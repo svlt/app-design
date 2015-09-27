@@ -6208,8 +6208,12 @@ body {
   width: 60px;
   height: 60px; }
 
-.card-copyright .nav-link:not(:first-child) {
-  padding-left: 0.75rem; }
+.row-copyright {
+  margin-top: 1rem; }
+
+.card-copyright .nav-link:not(:first-child),
+.row-copyright .nav-link {
+  padding-left: 1rem; }
 
 body {
   padding-top: 4.875rem; }
@@ -6233,8 +6237,10 @@ body {
   font-size: 22px;
   line-height: 1; }
 
-.navbar-form .form-control-sm, .navbar-form .input-group-sm > .form-control, .navbar-form .input-group-sm > .input-group-addon, .navbar-form .input-group-sm > .input-group-btn > .btn {
-  margin-top: .1rem; }
+.navbar-form {
+  margin-right: 1em; }
+  .navbar-form .form-control-sm, .navbar-form .input-group-sm > .form-control, .navbar-form .input-group-sm > .input-group-addon, .navbar-form .input-group-sm > .input-group-btn > .btn {
+    margin-top: .1rem; }
 
 .navbar .profile-pic {
   width: 35px;

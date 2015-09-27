@@ -77,7 +77,11 @@ body {
 	height: $profile-img-size-post;
 }
 
-// Copyright card
-.card-copyright .nav-link:not(:first-child) {
-	padding-left: $pagination-padding-x;
+// Copyright card and footer row
+.row-copyright {
+	margin-top: $spacer;
+}
+.card-copyright .nav-link:not(:first-child),
+.row-copyright .nav-link {
+	padding-left: $spacer;
 }

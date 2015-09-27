@@ -31,8 +31,11 @@ body {
 
 
 // Search position adjustment
-.navbar-form .form-control-sm {
-	margin-top: .1rem;
+.navbar-form {
+	margin-right: 1em;
+	.form-control-sm {
+		margin-top: .1rem;
+	}
 }
 
 // User dropdown
