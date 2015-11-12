@@ -4975,7 +4975,7 @@ a.bg-danger:focus, a.bg-danger:hover {
 .icon-svlt-h:before {
   content: "\e901"; }
 
-.icon-svlt-o:before, .icon-svlt-h:before {
+.icon-svlt-o:before, .icon-svlt-b:before {
   content: "\e900"; }
 
 .icon-add-to-list:before {
