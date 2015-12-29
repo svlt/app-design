@@ -5,7 +5,7 @@ $body-bg:                   #f5f8fa;
 $font-family-sans-serif:    'Lato', Helvetica, Arial, sans-serif;
 
 $input-border-focus:        lighten($brand-primary, 10%);
-$input-box-shadow-focus:    rgba($brand-primary, .5);
+$input-box-shadow-focus:    transparent;
 
 $enable-flex:               true;
 $enable-rounded:            true;
