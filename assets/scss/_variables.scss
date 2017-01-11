@@ -1,0 +1,18 @@
+// Layout
+$spacer: 15px;
+$spacer-sm: $spacer / 3;
+$container-width: 1200px;
+
+// Colors
+$brand-primary: #0087cb;
+$brand-gray: #a2aab0;
+$text-color: #3e3e3b;
+$text-brand: #fff;
+$body-bg: #f5f8fa;
+
+// Accents
+$border-radius: 4px;
+
+// Objects
+$input-border: $brand-gray;
+$input-border-focus: lighten($brand-primary, 10%);
