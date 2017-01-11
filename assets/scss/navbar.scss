@@ -1,6 +1,6 @@
 // Fixed navbar offset
 body {
-	padding-top: $navbar-height + $grid-gutter-width;
+	padding-top: calc(#{$navbar-height} + #{$grid-gutter-width-base});
 }
 
 // Navbar brand

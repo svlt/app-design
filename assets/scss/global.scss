@@ -44,7 +44,9 @@ body {
 	font-size: $font-size-lg;
 }
 .card-profile-pic {
-	@include center-block;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 	width: $profile-img-size-card;
 }
 .card-profile-img {
@@ -74,12 +76,12 @@ body {
 	> .media-body > header {
 		@include clearfix;
 		.name {
-			@include pull-left;
+			@include float-left;
 			font-weight: bold;
 			color: inherit;
 		}
 		.timestamp {
-			@include pull-right;
+			@include float-right;
 			font-size: $font-size-sm;
 			color: $text-muted;
 		}
@@ -107,12 +109,12 @@ body {
 .notification {
 	@include clearfix;
 	.icon {
-		@include pull-left;
+		@include float-left;
 		margin-right: $spacer / 2;
 		line-height: inherit;
 	}
 	.timestamp {
-		@include pull-right;
+		@include float-right;
 		font-size: $font-size-sm;
 		color: $text-muted;
 	}

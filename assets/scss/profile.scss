@@ -7,7 +7,7 @@
 	background-size: cover;
 }
 .jumbotron-profile {
-	margin-top: -$grid-gutter-width;
+	margin-top: -$grid-gutter-width-base;
 	text-align: center;
 	color: #fff;
 	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
@@ -20,7 +20,8 @@
 		margin-top: 1rem;
 	}
 	p {
-		@include center-block;
+		margin-left: auto;
+		margin-right: auto;
 		margin-bottom: 2rem;
 		max-width: 22rem;
 		font-size: 1rem;
